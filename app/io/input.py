@@ -1,4 +1,5 @@
 import pathlib
+from typing import Union
 
 import pandas as pd
 
@@ -12,7 +13,7 @@ def console_input(prompt: str = "Your input: ") -> str:
     return input(prompt)
 
 
-def file_input(path: str | pathlib.Path) -> str:
+def file_input(path: Union[str, pathlib.Path]) -> str:
     """
     Read user's input from file
     :param path: path to file
@@ -22,7 +23,7 @@ def file_input(path: str | pathlib.Path) -> str:
         return file.read()
 
 
-def file_input_pandas(path: str | pathlib.Path) -> pd.DataFrame:
+def file_input_pandas(path: Union[str, pathlib.Path]) -> pd.DataFrame:
     """
     Read Pandas DataFrame from JSON file
     :param path: path to JSON file

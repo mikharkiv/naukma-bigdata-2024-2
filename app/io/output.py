@@ -1,4 +1,5 @@
 import pathlib
+from typing import Union
 
 
 def console_output(message: str):
@@ -9,7 +10,7 @@ def console_output(message: str):
     print(message)
 
 
-def file_output(path: str | pathlib.Path, content: str):
+def file_output(path: Union[str, pathlib.Path], content: str):
     """
     Write content to the file
     :param path: path to file

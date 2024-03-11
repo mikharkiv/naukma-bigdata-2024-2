@@ -9,6 +9,8 @@ pandas = "==2.2.0"
 matplotlib = "*"
 pylint = "*"
 black = "*"
+pytest = "*"
+pytest-mock = "*"
 
 [dev-packages]
 
